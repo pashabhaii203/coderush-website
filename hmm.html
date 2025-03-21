@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECHNOVISION 2025 - Code Rush</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth; /* Enables smooth scrolling */
+        }
+
+        /* Background Image */
+        body {
+            background: url('https://png.pngtree.com/thumb_back/fh260/background/20231006/pngtree-stunning-3d-shapes-adorning-programming-code-background-image_13533726.png') no-repeat center center/cover;
+            background-attachment: fixed;
+            background-size: cover;
+            color: white;
+            text-align: center;
+        }
+
+        /* Navigation Bar */
+        header {
+            background: rgba(0, 0, 51, 0.9);
+            text-shadow: 0 0 10px #ADD8EC, 0 0 20px cyan;
+            padding: 15px 0;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            margin-left: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        /* Hover Effect for Navigation Links */
+        nav a:hover {
+            color: #ffcc00;
+            text-decoration: underline;
+        }
+
+        /* Section Styling */
+        .main-content {
+            margin-top: 80px; /* Prevent content from hiding behind navbar */
+        }
+
+        section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            text-shadow: 0 0 10px cyan, 0 0 20px blue;
+        }
+
+        p, ul {
+            font-size: 1.3rem;
+            text-shadow: 0 0 10px #8116E4, 0 0 20px white;
+        }
+
+        /* Button Styling */
+        button {
+            background: cyan;
+            color: black;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+            margin: 10px;
+        }
+
+        /* Hover Effect for Buttons */
+        button:hover {
+            background: #ffcc00;
+            color: black;
+            transform: scale(1.1);
+}
+.btn {
+  border-radius: 8px;
+  border: 2px solid #003366;
+  padding: 20px; /* Controls height */
+  width: 200px; /* Keeps the button narrow */
+  height: auto; /* Allows the button to expand in height */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block; /* Ensures it doesn't take full width */
+  font-size: 18px;
+  margin: 10px 0; /* Removes centering */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: cyan; 
+  color: black; 
+  word-wrap: break-word; /* Ensures long text wraps */
+  overflow-wrap: break-word;
+  white-space: normal; /* Allows text to break into new lines */
+}
+
+.btn:hover {
+  background-color: #003366;
+  color: white;
+}
+
+
+.btn {
+    border-radius: 8px;
+    border: 2px solid #003366;
+    padding: 30px; /* Increased padding for bigger size */
+    width: 400px; /* Ensure all buttons have the same width */
+    min-height: 150px; /* Set minimum height to make all buttons equal */
+    text-align: center;
+    font-size: 18px; /* Slightly bigger text */
+    background-color: #AED6F1;
+    color: black;
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Ensure text is centered */
+}
+
+/* Ensure equal sizing for all buttons */
+.btn-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Space between buttons */
+    justify-content: center;
+}
+
+
+
+
+/* Fixing inline text formatting */
+.btn b {
+    display: inline; 
+    font-style: normal; 
+    font-weight: bold;
+}
+
+
+
+/* Styling for right-side button */
+#challenges-button {
+    background: #FFECA1;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #F4D03F ;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover Effects */
+.btn:hover {
+    background-color: #003366;
+    color: white;
+}
+
+#challenges-button:hover {
+    background: #ffcc00;
+    color: black;
+}
+footer {
+    background: rgba(0, 0, 51, 0.9);
+    text-shadow: 0 0 10px #ADD8EC, 0 0 20px cyan;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="container">
+            <div class="logo">16th TECHNOVISION</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#guidelines">Guidelines</a></li>
+                    <li><a href="#motivation">Why To Participate?</a></li>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeaT4drAjYmX_QpREydQnVhgc05vx3rT7sr3RhJAChnCbxXLA/viewform">Register</a></li>
+                    <li><a href="#team">Team</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <section id="home">
+            <h2>Welcome to Code Rush</h2>
+            <p>Join us for a fun and exciting C, C++, and Python coding competition at Technovision 2025!</p>
+        </section>
+
+<section id="about">
+    <h2>About Code Rush</h2>
+    <p>Code Rush is an exciting coding competition as part of Technovision 2025.</p>
+
+   <div class="btn-container">
+    <div class="btn">
+     Code Rush is more than just a competition—it's a battlefield for coders to showcase their skills, creativity, and problem-solving abilities. As part of Technovision 2025, this event challenges participants with puzzles, problems, and logical reasoning tasks in C, C++, and Python.
+    </div>
+
+<div class="btn">
+    <b>Multiple Rounds –</b> The competition consists of multiple rounds, with each round increasing in difficulty.<br>
+    <b>Problem Solving –</b> Participants solve coding challenges ,be the one who Win the price and get certificate too  .<br>
+    <b>Languages Allowed –</b> You can code in C, C++, or Python as per your preference.
+</div>
+    <div class="btn"><font size=5 color= #D4ACOD><b>Mark The Date</b></font>
+         <b>Event Date:</b>5th April 2025<br>
+         <b> Venue:</b> Tecnia institue of advance studies<br>
+        <b>Time:</b> 11:30 AM onwards.
+         The competition will take place in <b>Lab 2, PG Building.</b><br>
+    </div>
+
+</section>
+
+
+        <section id="guidelines">
+            <h2>Guidelines</h2>
+            <div class="btn">
+            <p> Individual participation<br>
+	  	Registration fees is 50/-<br>
+		Duration is 1 hr.<br>
+		Tech stack:c,c++,python etc.<br>
+               Problems increase in difficulty<br>
+               Points awarded for correctness and efficiency<br>
+               Judging criteria: Accuracy, execution time, and optimal solutions<br>
+          </div>
+        </section>
+
+        <section id="motivation">
+            <h2>Why To Participate?</h2>
+	<div class="btn">
+          <p> 1. Boost your coding skills, challenge yourself, and compete with the best minds!<br>
+            2. Enhance problem-solving abilities, improve logical thinking, and prepare for coding interviews.<br>
+            3. Get recognition, earn certificates, and take a step towards your dream career in tech!<br>
+            4. Push your limits and experience the thrill of competitive coding!<br></p>
+	</div>
+        </section>
+<section id="team">
+    <h2>OUR TEAM</h2>
+    <div class="btn-container">
+        <div class="btn">
+            <p><b>Faculty Coordinator:</b> Dr. Ratandeep Kaur</p>
+        </div>
+        <div class="btn">
+            <p><b>Student Coordinator:</b> Asmi Soni (BCA Second Year)</p>
+        </div>
+        <div class="btn">
+            <p><b>Student Coordinator:</b> Hansika Narang (BCA Second Year)</p>
+        </div>
+        <div class="btn">
+            <p><b>Student Coordinator:</b> Khushpreet Kaur (BCA First Year)</p>
+        </div>
+    </div>
+</section>
+<footer>
+        <p>For any query contact (7011854961), (9911187392) ,(85958 78807) </p>
+    </footer>
+</body>
+</html>
+
+</body>
+</html>
